@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SocketIOチャット</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #inputmyname{display:none}
+    #chat{display:none}
+    #msglist{list-style-type:none; padding-left:1px;}
+    .msg-me{color:blue}
+    .name {font-weight:bold}
+  </style>
+</head>
+<body>
+
+<section>
+
+<div class="mainTitle">
+  <h1>クイズゲーム</h1>
+</div>
+
+<!-- クイズ -->
+
+<div class="titleBox">
+  <h2 id="title">ここに問題が表示されます</h2>
+  <p id="question"></p>
+</div>
+
+<div id="insertBox"></div>
+<div class="choiceBox" id="choiceBoxId">
+  <form id="choicePost">
+    <div class="choicePostList">
+      <label for="choice00" id="textFirst">ここが選択肢です</label>
+      <input type="radio" class="input" name="choices" id="choice00" value="0">
+    </div>
+    <div class="choicePostList">
+      <label for="choice01" id="textSecond">ここが選択肢です</label>
+      <input type="radio" class="input" name="choices" id="choice01" value="1">
+    </div>
+    <div class="choicePostList">
+      <label for="choice02" id="textThird">ここが選択肢です</label>
+      <input type="radio" class="input" name="choices" id="choice02" value="2">
+    </div>
+    <div id="anserSubmit">
+      <button id = "anserBtn" type="submit">送信</button>
+    </div>
+  </form>
+  <div id="rightBox">
+    <div id="rightBoxInner"></div>
+  </div>
+</div>
+
+<div id="resetBtn">
+  <button type="button">タイトルへ</button>
+</div>
+    <!-- <div>
+      <p id="result">結果は?</p>
+    </div> -->
+
+
+    
+
+</section>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-body" id="modalBox">
+      <!-- <h1>hello</h1> -->
+      <div class="closeBtnDiv">
+        <input type="button" id="closeBtn" value="close">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- クイズ終わり -->
+
+<!-- STEP1. 接続中 -->
+<section id="nowconnecting">
+  ...サーバに接続中
+</section>
+<!-- /接続中 -->
+
+<!-- STEP2. 名前を入力 -->
+<section id="inputmyname">
+  <p>あなたの名前を入力してください</p>
+  <form id="frm-myname">
+    <input type="text" id="txt-myname">
+    <button>入室</button>
+  </form>
+</section>
+<!-- /名前を入力 -->
+
+<!-- STEP3. チャット開始 -->
+<section id="chat">
+  <!-- 発言フォーム -->
+  <form id="frm-post">
+    <span id="myname"></span>&nbsp;<input type="text" id="msg">
+    <button>送信</button>
+  </form>
+
+  <!-- 発言ログ -->
+  <ul id="msglist"></ul>
+</section>
+<!-- /チャット本体 -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="quiz.js"></script>
+<script src="util.js"></script>
+<script src="app.js"></script>
+<script src="addCss.js"></script>
+<!-- <script src="chatArea.js"></script> -->
+
+</body>
+</html>

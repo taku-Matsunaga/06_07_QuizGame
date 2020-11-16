@@ -1,0 +1,148 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  width: 95%;
+  height: 95%;
+  // margin: 40% auto;
+}
+
+.mainTitle {
+  text-align: center;
+  background-color: rgb(177, 177, 177);
+}
+
+.titleBox {
+  font-size: 1.5rem;
+}
+
+#question{
+  text-align: center;
+}
+
+.choiceBox {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  #choicePost {
+    width: 50%;
+    margin: auto;
+
+    .choicePostList {
+      height: 80px;
+      align-items: center;
+      display: flex;
+      font-size: 1.5rem;
+      border: 1px solid #000;
+      ;
+      margin: 10px;
+    }
+  }
+
+  #rightBox {
+    width: 50%;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+
+    div {
+      // background-color: rgb(94, 94, 94);
+    }
+
+    #rightBoxInner {
+      img {
+        width: 33.333%;
+      }
+    }
+
+    @for $i from 1 through 10 {
+      #rightBoxInner#{$i} {
+        animation: fadeIn 15s ease-in-out;
+
+        img {
+          // width: 40%;
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+#anserSubmit {
+  text-align: center;
+
+  button {
+    width: 300px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+// modalエリア
+@for $i from 1 through 10 {
+  #modalBoxInner#{$i} {
+    width: 90%;
+    display: flex;
+
+    img {
+      // width: 40%;
+      width: 33%;
+      height: auto;
+      object-fit: cover;
+      margin: 10px auto;
+    }
+  }
+
+  #anserText#{$i} {
+    p {
+      width: 90%;
+
+      span {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+}
+
+.closeBtnDiv {
+  text-align: center;
+
+  input {
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+#resetBtn{
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,423 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  width: 95%;
+  height: 95%;
+}
+
+.mainTitle {
+  text-align: center;
+  background-color: #b1b1b1;
+}
+
+.titleBox {
+  font-size: 1.5rem;
+}
+
+#question {
+  text-align: center;
+}
+
+.choiceBox {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.choiceBox #choicePost {
+  width: 50%;
+  margin: auto;
+}
+
+.choiceBox #choicePost .choicePostList {
+  height: 80px;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+.choiceBox #rightBox {
+  width: 50%;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
+.choiceBox #rightBox #rightBoxInner img {
+  width: 33.333%;
+}
+
+.choiceBox #rightBox #rightBoxInner1 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner1 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner2 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner2 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner3 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner3 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner4 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner4 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner5 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner5 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner6 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner6 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner7 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner7 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner8 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner8 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner9 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner9 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.choiceBox #rightBox #rightBoxInner10 {
+  animation: fadeIn 15s ease-in-out;
+}
+
+.choiceBox #rightBox #rightBoxInner10 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+#anserSubmit {
+  text-align: center;
+}
+
+#anserSubmit button {
+  width: 300px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#modalBoxInner1 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner1 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText1 p {
+  width: 90%;
+}
+
+#anserText1 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner2 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner2 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText2 p {
+  width: 90%;
+}
+
+#anserText2 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner3 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner3 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText3 p {
+  width: 90%;
+}
+
+#anserText3 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner4 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner4 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText4 p {
+  width: 90%;
+}
+
+#anserText4 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner5 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner5 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText5 p {
+  width: 90%;
+}
+
+#anserText5 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner6 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner6 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText6 p {
+  width: 90%;
+}
+
+#anserText6 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner7 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner7 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText7 p {
+  width: 90%;
+}
+
+#anserText7 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner8 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner8 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText8 p {
+  width: 90%;
+}
+
+#anserText8 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner9 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner9 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText9 p {
+  width: 90%;
+}
+
+#anserText9 p span {
+  font-weight: bold;
+  color: red;
+}
+
+#modalBoxInner10 {
+  width: 90%;
+  display: flex;
+}
+
+#modalBoxInner10 img {
+  width: 33%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+#anserText10 p {
+  width: 90%;
+}
+
+#anserText10 p span {
+  font-weight: bold;
+  color: red;
+}
+
+.closeBtnDiv {
+  text-align: center;
+}
+
+.closeBtnDiv input {
+  width: 300px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#resetBtn {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
